@@ -1,0 +1,825 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+:root{
+    --Soft-red: hsl(7, 99%, 70%);
+    --Yellow: hsl(51, 100%, 49%);
+    --Dark-desaturated-cyan: hsl(167, 40%, 24%);
+    --Dark-blue: hsl(198, 62%, 26%);
+    --Dark-moderate-cyan: hsl(168, 34%, 41%);
+
+/* ### Neutral */
+
+--Very-dark-desaturated-blue:hsl(212, 27%, 19%);
+--Very-dark-grayish-blue: hsl(213, 9%, 39%);
+--Dark-grayish-blue: hsl(232, 10%, 55%);
+--Grayish-blue: hsl(210, 4%, 67%);
+--White:hsl(0, 0%, 100%);
+}
+
+
+body{
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+
+h1
+h2
+h3
+h4
+a{
+    font-family: serif;
+}
+
+
+header{
+    background-image: url(./images/desktop/image-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: var(--White);
+    padding-top: 2rem;
+    padding-bottom: 10rem;
+}
+
+nav.navigation{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 2.5vw;
+    margin-bottom: 5rem;
+}
+
+.navigation__links{
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.navigation__links a{
+    color: var(--Very-dark-desaturated-blue);
+    text-decoration: none;
+    background-color: var(--White);
+    padding: 0.7em 1.5em;
+    border-radius: 100px;
+}
+
+.hamburger{
+    display: none;
+}
+
+
+header h1{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+    letter-spacing: 10px;
+}
+
+header > img{
+    position: relative;
+    left: 50%;
+    animation: bounce 2s infinite;
+}
+
+section h2{
+    max-width: 61%;
+    font-weight: 900;
+}
+section h3{
+    text-align: center;
+    font-weight: 900;
+}
+section p {
+    margin-top: 2rem;
+    color: var(--Very-dark-desaturated-blue);
+   font-weight: 400;
+}
+
+section a{
+    margin-top: 3rem;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: var(--Very-dark-desaturated-blue);
+}
+
+.article{
+    display: flex;
+}
+
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 50%;
+    align-items: center;
+    line-height: 1.5rem;
+    text-align: left;
+}
+
+.main a{
+    text-decoration-color: rgba(255, 255, 0, 0.432);
+    text-decoration-thickness: 0.5rem;
+    text-underline-offset: -4px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    word-spacing: 0.5px;
+
+}
+
+
+.center{
+    margin-inline: 6.6rem;
+}
+
+
+ .menu img{
+    width: 100%;
+    height: 100%;
+}
+
+.side img{
+    width: 100%;
+    height: 100%;
+} 
+ 
+
+.mark{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 50%;
+    line-height: 1.5rem;
+    text-align: left;
+}
+
+.mark a{
+    text-decoration-color: hsla(7, 99%, 70%, 0.521);
+    text-decoration-thickness: 0.5rem;
+    text-underline-offset: -4.3px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    word-spacing: 0.5px;
+
+}
+
+
+
+.aside{
+    position: relative; 
+}
+
+.aside img{
+    height: 100%;
+    width: 100%;
+}
+
+
+.details{
+    position: relative;
+}
+
+.details img{
+    height: 100%;
+    width: 100%;
+}
+
+
+.relative{
+    position: absolute;
+    top: 23rem;
+    left: 10rem;
+    right: 10rem; 
+    text-align:center ;
+
+     
+}
+
+.relative p{
+    line-height: 1.5rem;
+}
+
+.features{
+    padding-inline: 10rem;
+}
+
+.features h4{
+    letter-spacing: 0.8rem;
+    color: var(--Very-dark-grayish-blue);
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.features .testimonials{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: var(--Very-dark-desaturated-blue);
+}
+.features img{
+    margin-block: 3rem;
+    border-radius: 50%;
+    height: 50px;
+}
+.name{
+    font-weight: 900;
+    margin-top:3rem ;
+    margin-bottom: 0.5rem;
+    color: var(--Very-dark-desaturated-blue);
+}
+
+.clientname{
+    color: var(--Dark-grayish-blue);
+
+}
+
+footer{
+    background-color: var(--Dark-moderate-cyan);
+    text-align: center;
+    padding-block: 3rem;
+}
+
+.nav_button ul{
+    margin-block: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.nav_button li{
+    list-style: none;
+    padding-inline: 2rem;
+}
+
+.nav_button a{
+    text-decoration: none;
+    color:var(--Dark-desaturated-cyan);
+    
+    
+}
+
+
+.socials ul{
+    margin-block: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.socials li{
+    list-style: none;
+    text-decoration: none;
+    padding-inline: 1rem;
+}
+
+
+.figure{
+    margin-top: 5rem;
+    display:flex;
+    
+}
+
+.fff{
+    display: flex;
+}
+
+.sss{
+    display: flex;
+}
+
+.figure img{
+    max-width: 50%;
+}
+
+
+@keyframes bounce {
+    from{
+        opacity: 0;
+        transform:translate(-50%, -40%);
+    }
+    
+    to{
+        opacity: 1;
+        transform: translate(-50%, 0%);
+    }
+}
+
+@media (max-width:700px) {
+    .navigation__links{
+        display: none;
+        /* transform: scaleX(0);
+        transition: 0.4s;
+        transform-origin: left; */
+        position: absolute;
+        top: 6rem;
+        padding-block: 3rem;
+        background-color: var(--White);
+        color: var(--Dark-blue);
+        width: 90vw;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        z-index: 2;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    nav.navigation {
+        padding-inline: 5vw;
+    }
+
+    .navigation__links a::after{
+        content: "";
+        /* these border tricks to create a traingle, check w3schools: how to make basic shapes */
+        border-left: 25px solid transparent;
+        border-top: 25px solid transparent;
+        border-right: 25px solid var(--White);
+
+        /* position:absolute will make this psueudo element realtive to the navigation
+         links above because navigation__links is also positioned */
+        position: absolute;
+
+        top: -25px;
+        right: 0;
+    } 
+
+
+    .firstt{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .secondd{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .thirdd{
+        display: flex;
+        flex-direction:column;
+    }
+
+    .thirdd img{
+        height: 100%;
+        width: 100%;
+    }
+
+    .details{
+        margin-top: -0.25rem;
+    }
+
+
+    .main{
+        max-width: 100%;
+        padding-block: 9rem;
+        line-height: 1.5rem;
+    }
+
+    .mark{
+        max-width: 100%;
+        padding-block: 9rem;
+        line-height: 1.5rem;
+    }
+
+    .features .testimonials{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    
+
+    .features h4{
+        letter-spacing: 0.5rem;
+        text-align: center;
+    }
+
+
+    .figure{
+        margin-top: 5rem;
+        display:flex;
+        flex-direction: column;
+        height: 20%;
+    }
+    .figure img{
+        max-width: 50%;
+    }
+
+
+}
+
+
+/* @media (min-width:315px) and (max-width:328px){
+    .relative{
+        position: absolute;
+        top: 8.5rem;
+        left: 0.2rem;
+        right: 0.2rem;
+        text-align: center;
+    }
+
+    .relative p{
+        margin-top: 0.2rem;
+    }
+} 
+
+
+
+@media (min-width:329px) and (max-width:339px){
+    .relative{
+        position: absolute;
+        top: 9rem;
+        left: 0.5rem;
+        right: 0.5rem;
+        text-align: center;
+    }
+
+    .relative p{
+        margin-top: 0.5rem;
+    }
+} 
+
+
+@media (min-width:340px) and (max-width:359px){
+    .relative{
+        position: absolute;
+        top: 9.5rem;
+        left: 0.1rem;
+        right: 0.1rem;
+        text-align: center;
+        
+    }
+
+    .relative p{
+        margin-top: 0.5rem;
+    }
+
+} 
+
+
+@media (min-width:360px) and (max-width:374px){
+    .relative{
+        position: absolute;
+        top: 10rem;
+        left: 0.5rem;
+        right: 0.5rem;
+        text-align: center;
+        
+    }
+
+    .relative p{
+        margin-top: 1rem;
+    }
+
+} 
+
+
+@media (min-width:375px) and (max-width:439px){
+    .relative{
+        position: absolute;
+        top: 12rem;
+        left: 0.5rem;
+        right: 0.5rem;
+        text-align: center;
+        
+    }
+
+    .relative p{
+        margin-top: 1rem;
+    }
+
+} 
+
+
+@media (min-width:440px) and (max-width:490px){
+    .relative{
+        position: absolute;
+        top: 14rem;
+        left: 3rem;
+        right: 3rem;
+        text-align: center;
+        
+    }
+
+    .relative p{
+        margin-top: 1rem;
+    }
+
+} 
+
+
+
+
+@media (min-width:489px) and (max-width:564px){
+    .relative{
+        position: absolute;
+        top: 15rem;
+        left: 5rem;
+        right: 5rem;
+        text-align: center;
+        
+    }
+
+
+} 
+
+
+
+@media (min-width:565px) and (max-width:649px){
+    .relative{
+        position: absolute;
+        top: 18rem;
+        left: 8rem;
+        right: 8rem;
+        text-align: center;
+        
+    }
+
+
+} 
+
+
+@media (min-width:798px) and (max-width:839px){
+    .relative{
+        position: absolute;
+        top: 12rem;
+        left: 2rem;
+        right: 2rem;
+        text-align: center;
+        
+    }
+
+}
+
+
+@media (min-width:840px) and (max-width:888px){
+    .relative{
+        position: absolute;
+        top: 13rem;
+        left: 2rem;
+        right: 2rem;
+        text-align: center;
+        
+    }
+
+}
+
+@media (min-width:889px) and (max-width:974px){
+    .relative{
+        position: absolute;
+        top: 13rem;
+        left: 5rem;
+        right: 5rem;
+        text-align: center;
+        
+    }
+
+}
+
+@media (min-width:975px) and (max-width:1149px){
+    .relative{
+        position: absolute;
+        top: 15rem;
+        left: 5rem;
+        right: 5rem;
+        text-align: center;
+        
+    }
+
+} 
+
+@media (min-width:1150px) and (max-width:1319px){
+    .relative{
+        position: absolute;
+        top: 20rem;
+        left: 5rem;
+        right: 5rem;
+        text-align: center;
+        
+    }
+
+} 
+ */
+
+ @media (min-width:260px) and (max-width:289px){
+    .relative{
+        position: absolute;
+        top: 7.5rem;
+        left: 0.5rem;
+        right: 0.5rem;
+        text-align: center;
+    }
+
+    .relative p{
+        margin-top: 0.3rem;
+        font-size: 0.9rem;
+        line-height: 0.9rem;
+    }
+ }
+
+
+ @media (min-width:290px) and (max-width:333px){
+    .relative{
+        position: absolute;
+        top: 9rem;
+        left: 0.5rem;
+        right: 0.5rem;
+        text-align: center;
+    }
+
+    .relative p{
+        margin-top: 0.3rem;
+        font-size: 0.9rem;
+        line-height: 0.9rem;
+    }
+}
+
+
+
+ @media (min-width:334px) and (max-width:344px){
+    .relative{
+        position: absolute;
+        top: 9rem;
+        left: 0.5rem;
+        right: 0.5rem;
+        text-align: center;
+    }
+
+    .relative p{
+        margin-top: 0.3rem;
+    }
+}
+
+ @media (min-width:345px) and (max-width:384px){
+    .relative{
+        position: absolute;
+        top: 10rem;
+        left: 0.5rem;
+        right: 0.5rem;
+        text-align: center;
+    }
+
+    .relative p{
+        margin-top: 0.3rem;
+    }
+}
+
+
+ @media (min-width:385px) and (max-width:422px){
+    .relative{
+        position: absolute;
+        top: 12rem;
+        left: 1rem;
+        right: 1rem;
+        text-align: center;
+    }
+
+    .relative p{
+        margin-top: 0.3rem;
+    }
+}
+
+
+@media (min-width:423px) and (max-width:489px){
+    .relative{
+        position: absolute;
+        top: 13rem;
+        left: 5rem;
+        right: 5rem;
+        text-align: center;
+    }
+
+    .relative p{
+        margin-top: 0.3rem;
+    }
+}
+
+
+@media (min-width:490px) and (max-width:590px){
+    .relative{
+        position: absolute;
+        top: 15rem;
+        left: 5rem;
+        right: 5rem;
+        text-align: center;
+    }
+
+
+}
+
+@media (min-width:591px) and (max-width:655px){
+    .relative{
+        position: absolute;
+        top: 15rem;
+        left: 5rem;
+        right: 5rem;
+        text-align: center;
+    }
+
+
+}
+
+
+
+@media (min-width:701px) and (max-width:797px){
+    .relative{
+        position: absolute;
+        top: 10rem;
+        left: 0.5rem;
+        right: 0.5rem;
+        text-align: center;
+        
+    }
+
+    .relative h3{
+        margin-bottom: -1rem;
+    }
+
+}
+
+
+
+@media (min-width:798px) and (max-width:839px){
+    .relative{
+        position: absolute;
+        top: 12rem;
+        left: 2rem;
+        right: 2rem;
+        text-align: center;
+        
+    }
+
+}
+
+
+@media (min-width:840px) and (max-width:888px){
+    .relative{
+        position: absolute;
+        top: 13rem;
+        left: 2rem;
+        right: 2rem;
+        text-align: center;
+        
+    }
+
+}
+
+
+@media (min-width:889px) and (max-width:974px){
+    .relative{
+        position: absolute;
+        top: 13rem;
+        left: 5rem;
+        right: 5rem;
+        text-align: center;
+        
+    }
+
+}
+
+
+
+@media (min-width:975px) and (max-width:1149px){
+    .relative{
+        position: absolute;
+        top: 15rem;
+        left: 5rem;
+        right: 5rem;
+        text-align: center;
+        
+    }
+
+}   
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
